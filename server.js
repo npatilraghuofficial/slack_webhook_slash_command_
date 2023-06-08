@@ -15,7 +15,7 @@ app.post('/stockprice', (req, res) => {
   const { text, user_id } = command;
 
   // Forward the request to the provided URL
-  axios.post('https://test-task-7.blitzi.co/blitz21bf7e67112e41ad8657467b68aef615', {
+  axios.post('https://process.env.API', {
     text,
     user_id
   })
